@@ -1,0 +1,40 @@
+[
+  {
+    "id": 1,
+    "title": "Kadınlar gününü kutladın mı?",
+    "description": "Dünya Kadınlar Günü, Birleşmiş Milletler tarafından bu şekilde tanımlanmış olarak her yıl 8 Mart'ta kutlanan uluslararası bir gündür. İnsan hakları temelinde kadınların siyasi ve sosyal bilincinin geliştirilmesine, ekonomik, siyasi ve sosyal başarılarının kutlanmasına ayrılmaktadır.",
+    "options": [
+      {
+        "id": 1,
+        "title": "Evet",
+        "description": "Yeap ✌🏻",
+        "action": true
+      },
+      {
+        "id": 2,
+        "title": "Hayır",
+        "description": "Uuups 👊🏻",
+        "action": false
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Question 2",
+    "description": "Description 2",
+    "options": [
+      {
+        "id": 1,
+        "title": "Option 1",
+        "description": "Description 1",
+        "action": true
+      },
+      {
+        "id": 2,
+        "title": "Option 2",
+        "description": "Description 2",
+        "action": false
+      }
+    ]
+  }
+]
