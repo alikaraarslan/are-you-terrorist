@@ -8,6 +8,9 @@ type Props = {
     description: string;
     action: boolean;
   }[];
+  activeQuestion: number;
+  setAnswerActionType: (type: boolean | any) => void | any;
+  setActiveQuestion: (type: boolean | any) => void | any;
 };
 const QuestionWrapper = styled.div`
   display: flex;
@@ -34,12 +37,24 @@ const CardWrapper = styled(Card)`
   background: linear-gradient(to right, #ffd194, #70e1f5);
 `;
 
-const Question: React.FC<Props> = ({ option }) => {
-  console.log('option', option);
+const Question: React.FC<Props> = ({
+  option,
+  setAnswerActionType,
+  setActiveQuestion,
+  activeQuestion,
+}) => {
   return (
     <QuestionWrapper>
       {option.map((m, index) => (
-        <CardWrapper key={index} clickable css={{ w: '350px', h: '160px' }}>
+        <CardWrapper
+          key={index}
+          clickable
+          css={{ w: '350px', h: '160px' }}
+          onClick={() => {
+            setAnswerActionType(m.action);
+            setActiveQuestion(m.action === true && activeQuestion + 1);
+          }}
+        >
           <QuestionTitleWrapper h3>{m.title}</QuestionTitleWrapper>
           <QuestionDescriptionWrapper>
             {m.description}

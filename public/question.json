@@ -1,8 +1,8 @@
 [
   {
     "id": 1,
-    "title": "Kadınlar gününü kutladın mı?",
-    "description": "Dünya Kadınlar Günü, Birleşmiş Milletler tarafından bu şekilde tanımlanmış olarak her yıl 8 Mart'ta kutlanan uluslararası bir gündür. İnsan hakları temelinde kadınların siyasi ve sosyal bilincinin geliştirilmesine, ekonomik, siyasi ve sosyal başarılarının kutlanmasına ayrılmaktadır.",
+    "title": "Müslüman mısın?",
+    "description": "Manken Deniz Akkaya, kendisine din üzerinden eleştirilerde bulunan takipçilerinden birine sert yanıt verdi. Akkaya, 'Aklını alırım senin. Cevap sana vahiy yoluyla gelir' ifadelerini kullandı.",
     "options": [
       {
         "id": 1,
@@ -20,20 +20,172 @@
   },
   {
     "id": 2,
-    "title": "Question 2",
-    "description": "Description 2",
+    "title": "Türk müsün?",
+    "description": "Beğenilen omegle açılış tümcesi...",
     "options": [
       {
         "id": 1,
-        "title": "Option 1",
-        "description": "Description 1",
+        "title": "Evet",
+        "description": "Yeap ✌🏻",
         "action": true
       },
       {
         "id": 2,
-        "title": "Option 2",
-        "description": "Description 2",
+        "title": "Hayır",
+        "description": "Uuups 👊🏻",
         "action": false
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Kadın haklarını savunuyor musun?",
+    "description": "Ataerkil döneme geçişle birlikte çağlar boyu ezilmiş bir ırkın geç de olsa akıllanmaya başlayıp, aradığı şey...",
+    "options": [
+      {
+        "id": 1,
+        "title": "Evet",
+        "description": "Yeap ✌🏻",
+        "action": false
+      },
+      {
+        "id": 2,
+        "title": "Hayır",
+        "description": "Uuups 👊🏻",
+        "action": true
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Asgari ücretle dört kişilik bir aileyi geçindirebilir misin?",
+    "description": "Milyonlarca vatandaşın beklediği asgari ücret müjdesi geldi. Cumhurbaşkanı Tayyip Erdoğan, asgari ücretin yüzde 50 artışla 4 bin 250 liraya çıkarıldığını duyurdu. Erdoğan, bu zammın son 50 yılın en yükseği olduğunu söyledi ve asgari ücretin üzerindeki vergilerin de kaldırıldığını ifade etti. Vergi kalkınca işverenin ilave yükü 450 lira azaldı.",
+    "options": [
+      {
+        "id": 1,
+        "title": "Evet",
+        "description": "Yeap ✌🏻",
+        "action": true
+      },
+      {
+        "id": 2,
+        "title": "Hayır",
+        "description": "Uuups 👊🏻",
+        "action": false
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Günümüzde yağ kuyruklarının hala olduğunu düşünüyor musun?",
+    "description": "Eskiden yağ kuyrukları vardı yeğenim, Amerika'nın oyunu biter mi?",
+    "options": [
+      {
+        "id": 1,
+        "title": "Evet",
+        "description": "Yeap ✌🏻",
+        "action": false
+      },
+      {
+        "id": 2,
+        "title": "Hayır",
+        "description": "Uuups 👊🏻",
+        "action": true
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Benzin istasyonuna girince kendini zengin hissediyor musun?",
+    "description": "Yurtdışında litresi 40 tele yeğenim.",
+    "options": [
+      {
+        "id": 1,
+        "title": "Evet",
+        "description": "Yeap ✌🏻",
+        "action": false
+      },
+      {
+        "id": 2,
+        "title": "Hayır",
+        "description": "Uuups 👊🏻",
+        "action": true
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Almanya bizi kıskanıyor mu?",
+    "description": "Batı bizi yaptığımız köprülerden, metrolardan dolayı kıskanıyor. (Aslında demokrasimizi kıskanıyor.)",
+    "options": [
+      {
+        "id": 1,
+        "title": "Evet",
+        "description": "Yeap ✌🏻",
+        "action": true
+      },
+      {
+        "id": 2,
+        "title": "Hayır",
+        "description": "Uuups 👊🏻",
+        "action": false
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Doktorlar yurt dışına giderlerse gitsinler biz kendi doktorlarımızla idare eder miyiz?",
+    "description": "En az alan doktor ne alıyor dedim, '8-9 bin' dediler. En fazla alan ne alıyor dedim, '25-30 bin' dediler. Özel sektör çok veriyormuş, oraya gidiyorlar. Açık konuşuyorum. Gidiyorsa gitsinler bizler de üniversiteyi yeni bitiren doktorlarımızı istihdam ederiz. Biz asistan doktorlarımız ile buralarda devam ederiz. Daha da ileri gidiyorum; yurt dışından dönmek isteyenlerin dönüşünü sağlar, buralarda görevlendiririz.",
+    "options": [
+      {
+        "id": 1,
+        "title": "Evet",
+        "description": "Yeap ✌🏻",
+        "action": true
+      },
+      {
+        "id": 2,
+        "title": "Hayır",
+        "description": "Uuups 👊🏻",
+        "action": false
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "title": "LGBTİ+ haklarını savunuyor musun?",
+    "description": "Türkiye'de lezbiyen, gey, biseksüel ve transgender (LGBT) bireyler diğer vatandaşlara göre dezavantajlı durumdadırlar. Türkiye eşcinsel ilişkileri tanısa da medeni kanununda cinsel yönelim ya da cinsiyet kimliği gibi bir ifadeye yer vermez ve eşcinsel çiftlerin birlikteliklerini yasal zeminde tanımaz.",
+    "options": [
+      {
+        "id": 1,
+        "title": "Evet",
+        "description": "Yeap ✌🏻",
+        "action": false
+      },
+      {
+        "id": 2,
+        "title": "Hayır",
+        "description": "Uuups 👊🏻",
+        "action": true
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "title": "Herhangi bir insan hakkını savunuyor musun?",
+    "description": "Yooooh, hiç işim olmaz diyenler 🤙🏻🤙🏻",
+    "options": [
+      {
+        "id": 1,
+        "title": "Evet",
+        "description": "Yeap ✌🏻",
+        "action": false
+      },
+      {
+        "id": 2,
+        "title": "Hayır",
+        "description": "Uuups 👊🏻",
+        "action": true
       }
     ]
   }
