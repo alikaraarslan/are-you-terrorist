@@ -4,9 +4,9 @@ import { Button, Spacer, Text } from '@nextui-org/react';
 import styled from 'styled-components';
 import { useState } from 'react';
 import questions from '../public/question.json';
-import Question from './question';
-import Terrorist from './terrorist';
-import SumTerrorist from './SumTerrorist';
+import Question from '../component/question';
+import Terrorist from '../component/terrorist';
+import SumTerrorist from '../component/SumTerrorist';
 
 const ContainerWrapper = styled.div`
   display: flex;
