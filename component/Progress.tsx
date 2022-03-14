@@ -2,7 +2,7 @@ import { Progress } from '@nextui-org/react';
 import styled from 'styled-components';
 
 type Props = {
-  value: number;
+  value: number | any;
 };
 
 const ProgressWrapper = styled.div`

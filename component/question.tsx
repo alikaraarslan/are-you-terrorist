@@ -10,7 +10,7 @@ type Props = {
     action: boolean | any;
   }[];
   activeQuestion: number | any;
-  percentage?: number | any;
+  percentage: number | any;
   setAnswerActionType: (type: boolean | any) => void | any;
   setActiveQuestion: (type: boolean | any) => void | any;
   setPercentage: (type: number | any) => void | any;
@@ -75,7 +75,9 @@ const Question: React.FC<Props> = ({
             }
             setActiveQuestion(m.action === true && activeQuestion + 1);
             setPercentage(
-              m.action ? percentage - 100 / questions.length : percentage
+              m.action && percentage
+                ? percentage - 100 / questions.length
+                : percentage || 0
             );
           }}
         >
