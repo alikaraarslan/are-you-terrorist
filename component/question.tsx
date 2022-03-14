@@ -10,7 +10,7 @@ type Props = {
     action: boolean | any;
   }[];
   activeQuestion: number | any;
-  percentage: number | any;
+  percentage?: number | any;
   setAnswerActionType: (type: boolean | any) => void | any;
   setActiveQuestion: (type: boolean | any) => void | any;
   setPercentage: (type: number | any) => void | any;
