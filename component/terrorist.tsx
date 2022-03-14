@@ -2,20 +2,23 @@
 import { Text } from '@nextui-org/react';
 import { ResultWrapper } from './SumTerrorist';
 
-const Terrorist = () => {
+type Props = {
+  value: number;
+};
+
+const Terrorist: React.FC<Props> = ({ value }) => {
   return (
     <ResultWrapper>
       <Text
-        h2
+        h3
         css={{
-          textAlign: 'center',
           color: 'white',
-          letterSpacing: '-0.02em',
-          mx: 'auto',
-          mb: '20px',
+          textAlign: 'center',
+          marginBottom: '20px',
+          letterSpacing: '0.05px',
         }}
       >
-        Sen bir teröristsin. 😎😎😎
+        Sen %{value.toFixed(0)} teröristsin. 🔥🔥🔥
       </Text>
       <img
         alt="terrorist"

@@ -1,38 +1,46 @@
 /* eslint-disable react/no-unescaped-entities */
 import type { NextPage } from 'next';
-import { Button, Spacer, Text } from '@nextui-org/react';
+import { Button, Container, Spacer, Text } from '@nextui-org/react';
 import styled from 'styled-components';
 import { useState } from 'react';
 import questions from '../public/question.json';
-import Question from '../component/question';
-import Terrorist from '../component/terrorist';
+import Question from '../component/Question';
+import Terrorist from '../component/Terrorist';
 import SumTerrorist from '../component/SumTerrorist';
+import ProgressBar from '../component/Progress';
 
-const ContainerWrapper = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-`;
+const ContainerWrapper = styled.div``;
 
 const WizardWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 20px;
+  width: 100%;
 `;
 
 const Home: NextPage = () => {
   const [start, setStart] = useState(false);
   const [activeQuestion, setActiveQuestion] = useState(1);
   const [answerActionType, setAnswerActionType] = useState(true);
+  const [percentage, setPercentage] = useState(100);
 
   const lastQuestion = questions.length + 1 === activeQuestion;
+
   return (
-    <>
+    <Container
+      display="flex"
+      alignItems="center"
+      justify="center"
+      direction="column"
+      responsive={true}
+      sm
+      style={{ height: '100vh' }}
+    >
+      {start && <ProgressBar value={percentage} />}
       {!answerActionType ? (
         <>
-          <Terrorist />
+          <Terrorist value={percentage} />
           <Button
             css={{
               margin: '20px auto',
@@ -46,6 +54,7 @@ const Home: NextPage = () => {
               setAnswerActionType(true);
               setStart(false);
               setActiveQuestion(1);
+              setPercentage(100);
             }}
           >
             Baştan Başla 🤙🏻
@@ -69,6 +78,7 @@ const Home: NextPage = () => {
                   setAnswerActionType(true);
                   setStart(false);
                   setActiveQuestion(1);
+                  setPercentage(100);
                 }}
               >
                 Baştan Başla 🤙🏻
@@ -79,17 +89,15 @@ const Home: NextPage = () => {
               {!start && (
                 <ContainerWrapper>
                   <Text
-                    h2
+                    h3
                     css={{
                       textAlign: 'center',
                       color: 'white',
                       letterSpacing: '-0.02em',
-                      width: 'calc(80% - 40px)',
-                      mx: 'auto',
                     }}
                   >
-                    TR serverinde yaşayanlar olarak karşılaşmamız muhtemel
-                    sorulara hazır mısın?
+                    TR simülasyonunu yaşayanlar olarak karşılaşmamız muhtemel
+                    olan sorulara hazır mısın?
                   </Text>
                   <Spacer y={1} />
                   <Button
@@ -108,50 +116,49 @@ const Home: NextPage = () => {
               )}
               {start && (
                 <WizardWrapper>
-                  <>
-                    {questions
-                      .filter((ff) => ff.id === activeQuestion)
-                      .map((option, index) => (
-                        <div key={index}>
-                          <Text
-                            h2
-                            css={{
-                              color: 'white',
-                              marginBottom: '10px',
-                              textAlign: 'center',
-                              letterSpacing: '.2px',
-                            }}
-                          >
-                            {option.title}
-                          </Text>
-                          <Text
-                            h6
-                            css={{
-                              color: 'white',
-                              textAlign: 'center',
-                              maxWidth: 'calc(80% - 40px)',
-                              margin: '0 auto 20px',
-                              letterSpacing: '0.05px',
-                            }}
-                          >
-                            {option.description}
-                          </Text>
-                          <Question
-                            option={option.options}
-                            setAnswerActionType={setAnswerActionType}
-                            setActiveQuestion={setActiveQuestion}
-                            activeQuestion={activeQuestion}
-                          />
-                        </div>
-                      ))}
-                  </>
+                  {questions
+                    .filter((ff) => ff.id === activeQuestion)
+                    .map((option, index) => (
+                      <div key={index} style={{ width: '100%' }}>
+                        <Text
+                          h3
+                          css={{
+                            color: 'white',
+                            marginBottom: '10px',
+                            textAlign: 'center',
+                            letterSpacing: '.2px',
+                          }}
+                        >
+                          {option.title}
+                        </Text>
+                        <Text
+                          h6
+                          css={{
+                            color: 'white',
+                            textAlign: 'center',
+                            marginBottom: '20px',
+                            letterSpacing: '0.05px',
+                          }}
+                        >
+                          {option.description}
+                        </Text>
+                        <Question
+                          option={option.options}
+                          setAnswerActionType={setAnswerActionType}
+                          setActiveQuestion={setActiveQuestion}
+                          activeQuestion={activeQuestion}
+                          setPercentage={setPercentage}
+                          percentage={percentage}
+                        />
+                      </div>
+                    ))}
                 </WizardWrapper>
               )}
             </>
           )}
         </>
       )}
-    </>
+    </Container>
   );
 };
 

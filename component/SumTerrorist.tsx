@@ -13,17 +13,16 @@ const SumTerrorist = () => {
   return (
     <ResultWrapper>
       <Text
-        h2
+        h3
         css={{
-          textAlign: 'center',
           color: 'white',
-          letterSpacing: '-0.02em',
-          mx: 'auto',
-          mb: '20px',
+          textAlign: 'center',
+          marginBottom: '20px',
+          letterSpacing: '0.05px',
         }}
       >
         Hala terörist olma ihtimaliniz var.
-        <br /> Henüz tam liste açıklanmadı, beklemedeyiz. 😎😎😎
+        <br /> Henüz tam liste açıklanmadı, beklemedeyiz. 🔥🔥🔥
       </Text>
       <img
         alt="list "

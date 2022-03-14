@@ -97,7 +97,7 @@
   {
     "id": 6,
     "title": "Benzin istasyonuna girince kendini zengin hissediyor musun?",
-    "description": "Yurtdışında litresi 40 tele yeğenim.",
+    "description": "Yurtdışında litresi 40 euro yeğenim.",
     "options": [
       {
         "id": 1,
@@ -116,7 +116,7 @@
   {
     "id": 7,
     "title": "Almanya bizi kıskanıyor mu?",
-    "description": "Batı bizi yaptığımız köprülerden, metrolardan dolayı kıskanıyor. (Aslında demokrasimizi kıskanıyor.)",
+    "description": "Batı bizim yaptığımız köprüleri, metroları ve demokrasimizi kıskanıyor.",
     "options": [
       {
         "id": 1,
@@ -134,8 +134,8 @@
   },
   {
     "id": 8,
-    "title": "Doktorlar yurt dışına giderlerse gitsinler biz kendi doktorlarımızla idare eder miyiz?",
-    "description": "En az alan doktor ne alıyor dedim, '8-9 bin' dediler. En fazla alan ne alıyor dedim, '25-30 bin' dediler. Özel sektör çok veriyormuş, oraya gidiyorlar. Açık konuşuyorum. Gidiyorsa gitsinler bizler de üniversiteyi yeni bitiren doktorlarımızı istihdam ederiz. Biz asistan doktorlarımız ile buralarda devam ederiz. Daha da ileri gidiyorum; yurt dışından dönmek isteyenlerin dönüşünü sağlar, buralarda görevlendiririz.",
+    "title": "2023'te arşa çıkacak mıyız? 🚀🚀",
+    "description": "Hedef 2023. Daha sonra 2053, 2071...",
     "options": [
       {
         "id": 1,
@@ -153,6 +153,101 @@
   },
   {
     "id": 9,
+    "title": "Doktorlar yurt dışına giderlerse gitsinler biz kendi doktorlarımızla idare eder miyiz?",
+    "description": "En az alan doktor ne alıyor dedim, '8-9 bin' dediler. En fazla alan ne alıyor dedim, '25-30 bin' dediler. Açık konuşuyorum. Gidiyorsa gitsinler bizler de üniversiteyi yeni bitiren doktorlarımızı istihdam ederiz. Daha da ileri gidiyorum; yurt dışından dönmek isteyenlerin dönüşünü sağlar, buralarda görevlendiririz.",
+    "options": [
+      {
+        "id": 1,
+        "title": "Evet",
+        "description": "Yeap ✌🏻",
+        "action": true
+      },
+      {
+        "id": 2,
+        "title": "Hayır",
+        "description": "Uuups 👊🏻",
+        "action": false
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "title": "Burası çok önemli kitabını okur musun?",
+    "description": "Ünlü şair ve düşünürümüz olan Sn. Berat Albayrak'ın yeni kaleme aldığı kitap tüm platformda satışta...(https://youtu.be/Z2sMgjCgfHA)",
+    "options": [
+      {
+        "id": 1,
+        "title": "Evet",
+        "description": "Yeap ✌🏻",
+        "action": true
+      },
+      {
+        "id": 2,
+        "title": "Hayır",
+        "description": "Uuups 👊🏻",
+        "action": false
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "title": "Cumhur İttifakı > Millet ittifakı? 💥",
+    "description": "Hak yolunu tercih edenler..",
+    "options": [
+      {
+        "id": 1,
+        "title": "Evet",
+        "description": "Yeap ✌🏻",
+        "action": true
+      },
+      {
+        "id": 2,
+        "title": "Hayır",
+        "description": "Uuups 👊🏻",
+        "action": false
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "title": "Trafoya kedi girdi mi?",
+    "description": "Ülkenin seçim gecesi yaşadığı ve oyların geç sayılmasına neden olan olay..",
+    "options": [
+      {
+        "id": 1,
+        "title": "Evet",
+        "description": "Yeap ✌🏻",
+        "action": false
+      },
+      {
+        "id": 2,
+        "title": "Hayır",
+        "description": "Uuups 👊🏻",
+        "action": true
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "title": "Her şey çok güzel olacak?",
+    "description": "Ekrem abi...",
+    "options": [
+      {
+        "id": 1,
+        "title": "Evet",
+        "description": "Yeap ✌🏻",
+        "action": false
+      },
+      {
+        "id": 2,
+        "title": "Hayır",
+        "description": "Uuups 👊🏻",
+        "action": true
+      }
+    ]
+  },
+  {
+    "id": 14,
     "title": "LGBTİ+ haklarını savunuyor musun?",
     "description": "Türkiye'de lezbiyen, gey, biseksüel ve transgender (LGBT) bireyler diğer vatandaşlara göre dezavantajlı durumdadırlar. Türkiye eşcinsel ilişkileri tanısa da medeni kanununda cinsel yönelim ya da cinsiyet kimliği gibi bir ifadeye yer vermez ve eşcinsel çiftlerin birlikteliklerini yasal zeminde tanımaz.",
     "options": [
@@ -171,7 +266,7 @@
     ]
   },
   {
-    "id": 10,
+    "id": 15,
     "title": "Herhangi bir insan hakkını savunuyor musun?",
     "description": "Yooooh, hiç işim olmaz diyenler 🤙🏻🤙🏻",
     "options": [
