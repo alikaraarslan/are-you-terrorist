@@ -4,16 +4,16 @@ import questions from '../public/question.json';
 
 type Props = {
   option: {
-    id: number;
-    title: string;
-    description: string;
-    action: boolean;
+    id: number | any;
+    title: string | any;
+    description: string | any;
+    action: boolean | any;
   }[];
-  activeQuestion: number;
-  percentage: number;
+  activeQuestion: number | any;
+  percentage: number | any;
   setAnswerActionType: (type: boolean | any) => void | any;
   setActiveQuestion: (type: boolean | any) => void | any;
-  setPercentage: (type: boolean | any) => void | any;
+  setPercentage: (type: number | any) => void | any;
 };
 const QuestionWrapper = styled.div`
   display: flex;
