@@ -2,7 +2,7 @@ import { Card, Text } from '@nextui-org/react';
 import styled from 'styled-components';
 import questions from '../public/question.json';
 
-type Props = {
+type QuestionProps = {
   option: {
     id: number | any;
     title: string | any;
@@ -46,7 +46,7 @@ const CardWrapper = styled(Card)`
   width: 100%;
 `;
 
-const Question: React.FC<Props> = ({
+const Question: React.FC<QuestionProps> = ({
   option,
   setAnswerActionType,
   setActiveQuestion,

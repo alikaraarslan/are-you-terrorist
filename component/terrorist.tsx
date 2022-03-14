@@ -2,11 +2,11 @@
 import { Text } from '@nextui-org/react';
 import { ResultWrapper } from './SumTerrorist';
 
-type Props = {
+type TerroristProps = {
   value: number;
 };
 
-const Terrorist: React.FC<Props> = ({ value }) => {
+const Terrorist: React.FC<TerroristProps> = ({ value }) => {
   return (
     <ResultWrapper>
       <Text
