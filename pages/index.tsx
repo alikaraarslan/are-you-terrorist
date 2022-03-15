@@ -8,6 +8,7 @@ import Question from '../component/Question';
 import Terrorist from '../component/Terrorist';
 import SumTerrorist from '../component/SumTerrorist';
 import ProgressBar from '../component/Progress';
+import Script from 'next/script';
 
 const ContainerWrapper = styled.div``;
 
@@ -37,6 +38,19 @@ const Home: NextPage = () => {
       sm
       style={{ height: '100vh' }}
     >
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-FZKQX3L5H7"
+        strategy="afterInteractive"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){window.dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-FZKQX3L5H7');
+        `}
+      </Script>
       {start && <ProgressBar value={percentage} />}
       {!answerActionType ? (
         <>
